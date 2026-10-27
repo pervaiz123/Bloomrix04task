@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloomrix Job and Internship Application Portal</title>
+</head>
+<body>
+    <header>
+        <h1>Bloomrix Career &amp; Internship Portal</h1>
+        <p>Welcome to our advanced application portal. Please fill out the form below with valid details.</p>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Application form</h2>
+            <form action="#" method="post" enctype="multipart/form-data" autocomplete="on">
+                <input type="hidden" name="application_code" value="BRX-INT-2026-04">
+
+                <fieldset>
+                    <legend>Applicant Personal &amp; Contact Details</legend>
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" minlength="3" maxlength="50" required placeholder="Enter full name" autocomplete="name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="user@example.com" autocomplete="email">
+
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="03052641492" required title="Enter 11 digit phone number">
+
+                    </p>
+                    <p>
+                        <label for="portfolio">Portfolio URL:</label>
+                        <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/pervaiz123" required autocomplete="url">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Schedule &amp; Experience Metrics</legend>
+                    <p>
+                        <label for="interview_slot">Preferred Interview Date &amp; Time:</label>
+                        <input type="datetime-local" id="interview_slot" name="interview_slot" min="2026-11-01T09:00" max="2026-12-31T17:00" required>
+                    </p>
+                    <p>
+                        <label for="experience">Years of Experience (min 0, max 10, step 0.5):</label>
+                        <input type="number" id="experience" name="experience" min="0" max="10" step="0.5" value="2">
+                        <output id="result" name="result" for="experience">2</output> Years
+                        
+                    </p>
+                    <p>
+                        <label for="skill_input">Core Technical Skill (Datalist):</label>
+                        <input list="skills-list" id="skill_input" name="skill_input" required placeholder="Select or type skill">
+                        <datalist id="skills-list">
+                            <option value="Python"></option>
+                            <option value="FastAPI"></option>
+                            <option value="HTML5"></option>
+                            <option value="Docker"></option>
+                            <option value="Git"></option>
+                            
+                
+                        </datalist>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Documents &amp; System States:</legend>
+                    <p>
+                        <label for="resume">Resume &amp; Certificates (Multiple PDF/DOCX):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" multiple required>
+
+                    </p>
+
+                    <p>
+                        <label for="fixed_role">Position Applied(Readonly):</label>
+                        <input type="text" id="fixed_role" name="fixed_role" value="Junior Software Engineer" readonly>
+                    </p>
+                    <p>
+                        <label for="system_status">System Status (Disabled):</label>
+                        <input type="text" id="system_status" name="system_status" value="Portal Active" disabled>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Application Metrics &amp; Progress</legend>
+                    <p>
+                        <label for="skill_meter">Skill Competency Level (Meter):</label>
+                        <meter id="skill_meter" min="0" max="100" value="90" low="30" high="80" optimum="95">90%</meter>
+                    </p>
+                    <p>
+                        <label for="form_progress">Form Completion Progress:</label>
+                        <progress id="form_progress" value="75" max="100">75%</progress>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Formatting, Direction &amp; Qualifications</legend>
+                    <p><del>Old Requirement: Minimum 1 year experience required.</del></p>
+                    <p><ins>New Requirement: Flexible entry-level or internship tracks available.</ins></p>
+                    <p><s>Deprecated legacy certification track.</s></p>
+                    <p><u>Important verification criteria apply to all candidates.</u></p>
+                    <p>Scientific Notation Example: Water chemical formula is H<sub>2</sub>O and algebraic squared variable is X<sup>2</sup>.</p>
+                    <p>Stylistic and Alternate Text: <b>Important Notice:</b> <i>Candidate evaluation is rigorous.</i></p>
+                    <p>Text Direction Isolation (BDI): User ID: <bdi>user_786</bdi></p>
+                    <p>Text Direction Override (BDO): <bdo dir="rtl">Bloomrix Portal 2026</bdo></p>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Interactive &amp; Fallback Elements</legend>
+                    <p>Digital Signature Canvas:</p>
+                    <canvas id="sigCanvas" width="250" height="60" style="border:1px solid #ccc;">Canvas fallback drawing area.</canvas>
+
+                    <p>Navigation Image Map:</p>
+                    <img src="https://picsum.photos/id/10/200/50" alt="Sample Map Banner" usemap="#workmap" width="200" height="50">
+                    <map id="workmap" name="workmap">
+                        <area shape="rect" coords="0,0,200,50" href="#overview" alt="Overview link">
+                    </map>
+
+                    <p>Reusable Template Example:</p>
+                    <template id="applicant-note">
+                        <p>Template Note: All applications are reviewed in 48 hours.</p>
+                    </template>
+
+                    <noscript>
+                        <p style="color: red;">Warning: JavaScript is disabled or not supported in your browser. This form fully operates with native HTML5 validation.</p>
+                    </noscript>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Form Controls &amp; Actions</legend>
+                    <p>
+                        <input type="submit" value="Submit Application">
+                        <input type="reset" value="Reset Form">
+                        <input type="button" value="Custom Button">
+                        <input type="image" src="https://picsum.photos/id/0/120/35" alt="Submit Image Button" width="120" height="35">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <address>
+            Bloomrix Training Headquarters<br>
+            Lahore, Punjab, Pakistan<br>
+            Email: <a href="mailto:support@bloomrix.com">support@bloomrix.com</a>
+        </address>
+        <p><small>&copy; 2026 Bloomrix Technologies. All Rights Reserved. </small></p>
+    </footer>
+    
+</body>
+</html>
