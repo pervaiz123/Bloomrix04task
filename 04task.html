@@ -77,7 +77,7 @@
                     </p>
 
                     <p>
-                        <label for="fixed_role">Position Applied(Readonly):</label>
+                        <label for="fixed_role">Position Applied (Readonly):</label>
                         <input type="text" id="fixed_role" name="fixed_role" value="Junior Software Engineer" readonly>
                     </p>
                     <p>
@@ -106,10 +106,12 @@
                     <p><ins>New Requirement: Flexible entry-level or internship tracks available.</ins></p>
                     <p><s>Deprecated legacy certification track.</s></p>
                     <p><u>Important verification criteria apply to all candidates.</u></p>
-                    <p>Scientific Notation Example: Water chemical formula is H<sub>2</sub>O and algebraic squared variable is X<sup>2</sup>.</p>
+                    <p>Academic &amp; Professional Qualification: Candidate holds a 1<sup>st</sup> Class Honors Degree in Software
+                        Engineering and Tier<sub>1</sub> Professional Certification (ranked in the 5<sup>th</sup> percentile).</p>
                     <p>Stylistic and Alternate Text: <b>Important Notice:</b> <i>Candidate evaluation is rigorous.</i></p>
-                    <p>Text Direction Isolation (BDI): User ID: <bdi>user_786</bdi></p>
-                    <p>Text Direction Override (BDO): <bdo dir="rtl">Bloomrix Portal 2026</bdo></p>
+                    <p>Multilingual Candidate Name (BDI Language Isolation): Candidate <bdi lang="ar">محمد رضوان</bdi> (Arabic RTL script)
+                    submitted credentials without disrupting English layout.</p>
+                    <p>Language Text Direction Override (BDO): <bdo dir="rtl" lang="ar">مرحبا بكم في بوابة التوظيف</bdo></p>
 
                 </fieldset>
                 <fieldset>
@@ -118,7 +120,7 @@
                     <canvas id="sigCanvas" width="250" height="60" style="border:1px solid #ccc;">Canvas fallback drawing area.</canvas>
 
                     <p>Navigation Image Map:</p>
-                    <img src="https://picsum.photos/id/10/200/50" alt="Sample Map Banner" usemap="#workmap" width="200" height="50">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScyMDAnIGhlaWdodD0nNTAnPjxyZWN0IHdpZHRoPScyMDAnIGhlaWdodD0nNTAnIGZpbGw9JyMyNTYzZWInLz48dGV4dCB4PScxMDAnIHk9JzMwJyBmaWxsPScjZmZmZmZmJyBmb250LWZhbWlseT0nc2Fucy1zZXJpZicgZm9udC1zaXplPScxMycgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC13ZWlnaHQ9J2JvbGQnPlRvcCBPdmVydmlldyBBbmNob3I8L3RleHQ+PC9zdmc=" alt="Sample Map Banner" usemap="#workmap" width="200" height="50">
                     <map id="workmap" name="workmap">
                         <area shape="rect" coords="0,0,200,50" href="#overview" alt="Overview link">
                     </map>
@@ -134,12 +136,35 @@
                 </fieldset>
 
                 <fieldset>
+                    <legend>Terms &amp; Conditions and Applicant Agreement</legend>
+                    <p>Please review our employment and internship policies prior to final submission:</p>
+                
+                    <div
+                        style="max-height: 120px; overflow-y: auto; border: 1px solid #cbd5e1; padding: 12px; background-color: #f8fafc; font-size: 0.9em; margin-bottom: 12px; border-radius: 4px;">
+                        <p style="margin: 4px 0;"><strong>1. Accuracy of Submissions:</strong> The applicant certifies that all academic
+                            transcripts, employment history, and personal details provided are authentic and truthful.</p>
+                        <p style="margin: 4px 0;"><strong>2. Verification Consent:</strong> Bloomrix Technologies reserves the right to
+                            perform background credential checks and verify submitted certifications with issuing institutions.</p>
+                        <p style="margin: 4px 0;"><strong>3. Non-Disclosure Agreement:</strong> Candidate agrees not to reproduce,
+                            distribute, or share proprietary assessment tasks or interview technical prompts.</p>
+                    </div>
+                
+                    <p>
+                        <input type="checkbox" id="terms_consent" name="terms_consent" required>
+                        <label for="terms_consent">I have read, understood, and agree to the Terms &amp; Conditions and Application
+                            Submission Policy.</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
                     <legend>Form Controls &amp; Actions</legend>
                     <p>
                         <input type="submit" value="Submit Application">
                         <input type="reset" value="Reset Form">
                         <input type="button" value="Custom Button">
-                        <input type="image" src="https://picsum.photos/id/0/120/35" alt="Submit Image Button" width="120" height="35">
+                        <input type="image" name="submit_image"
+                            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMzAnIGhlaWdodD0nMzYnPjxyZWN0IHdpZHRoPScxMzAnIGhlaWdodD0nMzYnIHJ4PSc0JyBmaWxsPScjMDU5NjY5Jy8+PHRleHQgeD0nNjUnIHk9JzIzJyBmaWxsPScjZmZmZmZmJyBmb250LWZhbWlseT0nc2Fucy1zZXJpZicgZm9udC1zaXplPScxMicgdGV4dC1hbmNob3I9J21pZGRsZScgZm9udC13ZWlnaHQ9J2JvbGQnPlN1Ym1pdCAoSW1hZ2UpPC90ZXh0Pjwvc3ZnPg=="
+                            alt="Submit Image Button" width="130" height="36">
                     </p>
                 </fieldset>
             </form>
